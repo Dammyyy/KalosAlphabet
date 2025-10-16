@@ -21,8 +21,9 @@
 		<title>カロス文字データベース</title>
 		<link rel="stylesheet"href="./assets/css/style.css">
 		<link rel="stylesheet"href="./assets/css/jquery.fancybox.min.css">
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 	</head>
 
 	<body>
@@ -58,37 +59,7 @@
 
 			<div id="content">
 				<div id="main">
-					<div id="app">
-						<table>
-							<thead>
-								<tr>
-									<th @click="sortBy('Image')" :class="sortedClass('Image')">SS</th>
-									<th @click="sortBy('Kalos')" :class="sortedClass('Kalos')">カロス文字</th>
-									<th @click="sortBy('Estimation')" :class="sortedClass('Estimation')">推定される文字</th>
-									<th @click="sortBy('Japanese')" :class="sortedClass('Japanese')">日本語</th>
-								</tr>
-							</thead>
-
-							<tbody>
-								<tr v-for="row in eventedAction">
-									<td>
-										<a data-fancybox="gallery" :href="row.Image" :data-caption="row.Alt">
-											<img :src="row.Image" :alt="row.Alt">
-										</a>
-									</td>
-									<td>
-										<p class="galar">{{row.Galar}}</p>
-										<p class="hisui">{{row.Hisui}}</p>
-										<p class="kalos">{{row.Kalos}}</p>
-										<p class="text">{{row.Alt}}</p>
-										<p class="text">{{row.Text}}</p>
-									</td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<div id="app"></div>
 				</div>
 			</div>
 
@@ -128,6 +99,7 @@
 		</div>
 
 		<script src="./assets/js/jquery.fancybox.js"></script>
+		<script src="./assets/js/items.js"></script>
 		<script src="./assets/js/index.js"></script>
 	</body>
 

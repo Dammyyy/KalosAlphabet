@@ -268,6 +268,13 @@
 		padding: 3px 0;
 	}
 
+	p.galar,
+	p.hisui,
+	p.kalos,
+	p.text {
+		white-space: pre-line;
+	}
+
 	/*ソート*/
 	th.sorted.desc::after{
 	    display: inline-block;
@@ -503,6 +510,12 @@
 		font-size: 30px;
 		margin: 20px auto;
 		line-height: 0.7;
+	}
+	p.galar,
+	p.hisui,
+	p.kalos,
+	p.text {
+		white-space: pre-line;
 	}
 	/*ソート*/
 	th.sorted.desc::after{
