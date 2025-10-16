@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-K9RM96K');</script>
+		<!-- End Google Tag Manager -->
+		<meta charset="UTF-8">
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="カロス文字データベース" />
+		<meta property="og:description" content="【Pokémon LEGENDS Z-A】カロス地方で確認された文字のまとめ" />
+		<meta property="og:url" content="https://dammyyy.github.io/KalosAlphabet/" />
+		<meta property="og:site_name" content="カロス文字データベース" />
+		<meta property="og:image" content="https://dammyyy.github.io/KalosAlphabet/imgs/2022012810110000-7CBCCE282CD36658AB28471FB4791102.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@Damo_drums" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>カロス文字データベース</title>
+		<link rel="stylesheet"href="./assets/css/style.css">
+		<link rel="stylesheet"href="./assets/css/jquery.fancybox.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9RM96K"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<div id="wrapper">
+			<header>
+				<div class="header_inner">
+					<h1 class="title">カロス文字データベース</h1>
+					<div class="header_contents clearfix">
+						<p class="description">
+							2025年10月16日発売の『Pokémon LEGENDS Z-A』
+							<br>
+							<br>
+							その舞台となるカロス地方で発見した文字を表にしました。
+							<br>
+							情報などコメントが御座いましたら<a href="https://twitter.com/damo_drums">twitter</a>までご連絡ください。
+						</p>
+					</div>
+				</div>
+			</header>
+
+			<div id="linkmenu">
+				<ul class="linkmenu_inner clearfix">
+					<li><a href="https://dammyyy.github.io/GalarAlphabet/" target="_blank">ガラル文字データベース</a></li>
+					<li><a href="https://dammyyy.github.io/SinnohAlphabet/" target="_blank">シンオウ文字データベース</a></li>
+					<li><a href="https://dammyyy.github.io/HisuiAlphabet/" target="_blank">ヒスイ文字データベース</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+
+			<div id="content">
+				<div id="main">
+					<div id="app">
+						<table>
+							<thead>
+								<tr>
+									<th @click="sortBy('Image')" :class="sortedClass('Image')">SS</th>
+									<th @click="sortBy('Kalos')" :class="sortedClass('Kalos')">カロス文字</th>
+									<th @click="sortBy('Estimation')" :class="sortedClass('Estimation')">推定される文字</th>
+									<th @click="sortBy('Japanese')" :class="sortedClass('Japanese')">日本語</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr v-for="row in eventedAction">
+									<td>
+										<a data-fancybox="gallery" :href="row.Image" :data-caption="row.Alt">
+											<img :src="row.Image" :alt="row.Alt">
+										</a>
+									</td>
+									<td>
+										<p class="galar">{{row.Galar}}</p>
+										<p class="hisui">{{row.Hisui}}</p>
+										<p class="kalos">{{row.Kalos}}</p>
+										<p class="text">{{row.Alt}}</p>
+										<p class="text">{{row.Text}}</p>
+									</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<footer>
+				<div class="footer_inner clearfix">
+					<div class="footer_box left footermenu">
+						<h3>関連リンク</h3>
+						<div class="footer_contents">
+							<ul>
+								<li><a href="https://dammyyy.github.io/GalarAlphabet/" target="_blank">ガラル文字データベース</a></li>
+								<li><a href="https://dammyyy.github.io/SinnohAlphabet/" target="_blank">シンオウ文字データベース</a></li>
+								<li><a href="https://dammyyy.github.io/HisuiAlphabet/" target="_blank">ヒスイ文字データベース</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer_box left">
+						<h3>著作権について</h3>
+						<div class="footer_contents">
+							<ul>
+								<li>このページでは、株式会社ポケモンを代表とする共同著作者が権利を所有する画像を利用しております。当該画像の転載・配布は禁止いたします。</li>
+								<li>その他、掲載している画像・台詞は、著作権法第32条に基づく引用であり、著作権は作者及び出版社にあります。</li>
+								<li>また、自作フォントにつきましても、転載・配布は禁止いたします。本フォントにより生じた損害に関しては責任を負いません。</li>
+								<li>ポケットモンスター・ポケモン・Pokémonは任天堂・クリーチャーズ・ゲームフリークの登録商標です。</li>
+								<li>Nintendo Switchのロゴ・Nintendo Switchは任天堂の商標です。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<div id="copyright">
+				<div id="copyright_inner" class="clearfix">
+					<p class="copyright_text">
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/jquery.fancybox.js"></script>
+		<script src="./assets/js/index.js"></script>
+	</body>
+
+</html>
+

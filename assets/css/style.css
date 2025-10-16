@@ -1,0 +1,517 @@
+@media screen and (min-width:  479px) {
+
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	html {
+		color: #666;
+	}
+	body {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif,"Osaka‐等幅";
+		line-height: 1.6em;
+		background-color: #eaeaea;
+	}
+
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+	header {
+		width: 100%;
+		margin: 0;
+		padding: 30px 0;
+		background: #6a6f75;
+		text-align: center;
+	}
+	.header_inner {
+		width: 960px;
+		margin: 0 auto;
+		text-align: left;
+		padding: 0 8px;
+	}
+	h1 {
+		margin: 0 auto 10px;
+		font-size: 20px;
+		color: #fff;
+		line-height: 1.4;
+		text-decoration: none;
+	}
+	.clearfix {
+		zoom: 1;
+	}
+	.clearfix:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	header .description {
+		width: 740px;
+		float: left;
+		margin: 0 auto;
+		padding: 0;
+		color: #fff;
+		line-height: 1.4;
+	}
+
+	header .description a {
+		color: #fff;
+	}
+
+	section.hint {
+		position: fixed;
+		/*height: 50px;*/
+		font-size: 20px;
+		padding: 8px;
+		background-color: white;
+		text-align: center;
+		width: inherit;
+		bottom: 0px;
+	}
+	section.hint .hisui{
+		font-size: 30px;
+		white-space: pre-line;
+	}
+	section.hint .galar{
+		font-size: 30px;
+		padding: 4px;
+		white-space: pre-line;
+	}
+	#linkmenu {
+		width: 100%;
+		margin: 0 auto 40px;
+		text-align: center;
+		background: #9cabbc;
+		border-bottom: 1px solid #ddd;
+	}
+	.linkmenu_inner {
+		width: 960px;
+		margin: 0 auto;
+	    padding: 0 8px;
+		text-align: left;
+	}
+	.linkmenu_inner li {
+		margin: 0 auto;
+		padding: 5px 20px 5px 0;
+		text-align: left;
+		float: left;
+	}
+	li {
+		list-style-type: none;
+	}
+	.linkmenu_inner li a,
+	.linkmenu_inner li a:link,
+	.linkmenu_inner li a:visited {
+		color: #fff;
+		font-size: 14px;
+	}
+	.linkmenu_inner li a:hover,
+	.linkmenu_inner li a:active {
+		color: #7a6f75;
+	}
+
+	.footermenu {
+		display: none;
+	}
+
+	#content {
+		width: 960px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#main {
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	#app {
+		margin: 0 0 40px 0;
+		background: #fff;
+		padding: 0;
+		color: #000;
+		/*border: 1px solid #aaa;*/
+	}
+
+	table {
+		text-align: center;
+		border-collapse: collapse;
+		border-spacing: 0;
+		font-size: 11pt;
+		width: 100%;
+	}
+
+	table th {
+		user-select: none;
+		font-weight: bold;
+		padding: 6px 5px;
+		border: 1px #666666 solid;
+		background: #99ccff;
+		white-space: nowrap;
+	}
+
+	table td {
+		padding: 6px 5px;
+		border: 1px #666666 solid;
+		font-size: 11px;
+	}
+
+	table tbody td p{
+		font-size: 2em;
+	}
+
+	table tr {
+		background-color: #efd;
+	}
+	table tr:nth-child(odd) {
+		background-color: #fff;
+	}
+
+	table tbody img {
+		width: 500px;
+	}
+	table tr td:first-child {
+		width: 530px;
+	}
+
+
+	footer {
+		width: 100%;
+		padding: 20px 0;
+		background: #ccc;
+		text-align: center;
+		border-top: 1px solid #aaa;
+	}
+	footer h3 {
+		width: 100%;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 10px 0;
+		border-bottom: 1px solid #aaa;
+		margin-bottom: 10px;
+	}
+	.footer_inner {
+		width: 960px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.footer_box {
+		width: 960px;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.footer_contents {
+		margin-bottom: 40px;
+		margin-left: 10px;
+	}
+	.footer_contents li {
+		margin-bottom: 5px;
+	}
+	.footer_contents a:link {
+		color: #498b9d;
+		text-decoration: underline;
+	}
+
+	#copyright {
+		margin: 0 auto;
+		font-size: 12px;
+		padding: 10px 0;
+		text-align: center;
+		background: #7a6f75;
+		color: #fff;
+	}
+	#copyright_inner {
+		width: 960px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.copyright_text {
+		width: 75%;
+		float: left;
+	}
+
+
+	.alpha {
+		pointer-events: none;
+		user-select: none;
+	}
+
+	/* シンオウフォント */
+	@font-face {
+		font-family: 'Hisui';
+		src: url('./assets/fonts/Hisui-Regular.ttf');
+	}
+	.hisui {
+		font-family: "Hisui" !important;
+		font-size: 60px;
+		line-height: 0.7;
+	}
+	/* ガラルフォント */
+	@font-face {
+		font-family: 'Galarfont_1';
+		src: url('./assets/fonts/Galarfont_1-Regular.ttf');
+	}
+	.galar {
+		font-family: "Galarfont_1" !important;
+		font-size: 40px;
+		margin: 0 auto;
+		line-height: 0.9;
+	}
+	.text {
+		line-height: 1.2;
+		padding: 3px 0;
+	}
+
+	/*ソート*/
+	th.sorted.desc::after{
+	    display: inline-block;
+	    content: '▼';
+	}
+	th.sorted.asc::after{
+	    display: inline-block;
+	    content: '▲';
+	}
+
+}
+
+@media screen and (max-width: 479px){
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	html {
+		color: #666;
+	}
+	body {
+		width: 100%;
+		text-align: center;
+		font-size: 12px;
+		font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif,"Osaka‐等幅";
+		line-height: 1.6em;
+		background-color: #eaeaea;
+	}
+
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+	}
+	header {
+		width: 100%;
+		margin: 0;
+		padding: 30px 0;
+		background: #6a6f75;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.header_inner {
+		width: 100%;
+		text-align: left;
+	}
+	h1 {
+		margin: 0 auto 10px;
+		font-size: 20px;
+		color: #fff;
+		line-height: 1.4;
+		text-decoration: none;
+		padding: 0 8px;
+	}
+	.header_contents {
+		padding: 0 8px;
+	}
+	.clearfix {
+		zoom: 1;
+	}
+	.clearfix:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	header .description {
+		width: 100%;
+		float: left;
+		margin: 0 auto;
+		padding: 0;
+		color: #fff;
+		line-height: 1.4;
+	}
+
+	header .description a {
+		color: #fff;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	#linkmenu {
+		display: none;
+	}
+
+	#content {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	#main {
+		width: 100%;
+		padding: 0;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	#app {
+		margin: 0 0 40px 0;
+		background: #fff;
+		padding: 0;
+		color: #000;
+		/*border: 1px solid #aaa;*/
+	}
+
+	table {
+		text-align: center;
+		border-collapse: collapse;
+		border-spacing: 0;
+		font-size: 11pt;
+		width: 100%;
+	}
+
+	table th {
+		user-select: none;
+		font-weight: bold;
+		padding: 6px 5px;
+		border: 1px #666666 solid;
+		background: #99ccff;
+		white-space: nowrap;
+	}
+
+	table td {
+		padding: 6px 5px;
+		border: 1px #666666 solid;
+		font-size: 11px;
+	}
+
+	table thead th {
+		font-size: 12px;
+	}
+	table tbody td p{
+		/*font-size: 18px;*/
+		/*margin: 0 40px;*/
+	}
+
+	table tr {
+		background-color: #efd;
+	}
+	table tr:nth-child(odd) {
+		background-color: #fff;
+	}
+
+	table tbody img {
+		width: 160px;
+	}
+	table tr td:first-child {
+		/*width: 200px;*/
+	}
+
+
+	footer {
+		width: 100%;
+		padding: 20px 0;
+		background: #ccc;
+		text-align: center;
+		border-top: 1px solid #aaa;
+	}
+	footer h3 {
+		width: 100%;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 10px 0;
+		border-bottom: 1px solid #aaa;
+		margin-bottom: 10px;
+	}
+	.footer_inner {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.footer_box {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.footer_contents {
+		margin-bottom: 20px;
+		margin-left: 10px;
+	}
+	.footer_contents li {
+		margin-bottom: 5px;
+	}
+	.footer_contents a:link {
+		color: #498b9d;
+		text-decoration: underline;
+	}
+
+	#copyright {
+		margin: 0 auto;
+		font-size: 12px;
+		padding: 10px 0;
+		text-align: center;
+		background: #7a6f75;
+		color: #fff;
+	}
+	#copyright_inner {
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.copyright_text {
+		width: 75%;
+		float: left;
+	}
+
+
+	.alpha {
+		display: none;
+	}
+
+	/* シンオウフォント */
+	@font-face {
+		font-family: 'Hisui';
+		src: url('./assets/fonts/Hisui-Regular.ttf');
+	}
+	.hisui {
+		font-family: "Hisui" !important;
+		font-size: 30px;
+		margin: 20px auto;
+		line-height: 0.7;
+	}
+
+	/* ガラルフォント */
+	@font-face {
+		font-family: 'Galarfont_1';
+		src: url('./assets/fonts/Galarfont_1-Regular.ttf');
+	}
+	.galar {
+		font-family: "Galarfont_1" !important;
+		font-size: 30px;
+		margin: 20px auto;
+		line-height: 0.7;
+	}
+	/*ソート*/
+	th.sorted.desc::after{
+	    display: inline-block;
+	    content: '▼';
+	}
+	th.sorted.asc::after{
+	    display: inline-block;
+	    content: '▲';
+	}
+
+}
